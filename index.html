@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KültürSense: Etik Teknoloji Rehberi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --primary: #6366f1;
+      }
+      body {
+        font-family: 'Nunito', sans-serif;
+        background-color: #f0f9ff;
+        color: #1e293b; /* Daha koyu, daha okunabilir */
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+        font-size: 18px;
+      }
+      h1, h2, h3, h4, button {
+        font-weight: 800; /* Başlıklar için ekstra kalınlık */
+        letter-spacing: -0.01em;
+      }
+      p, span, li {
+        font-weight: 600; /* Gövde metinleri için daha kalın yapı */
+      }
+      .animate-float {
+        animation: float 4s ease-in-out infinite;
+      }
+      @keyframes float {
+        0% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-15px) rotate(1deg); }
+        100% { transform: translateY(0px) rotate(0deg); }
+      }
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 8px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-track {
+        background: #f1f5f9;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 10px;
+      }
+      /* Beyaz metinlerin okunabilirliği için gölge */
+      .text-shadow-sm {
+        text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.32.0",
+    "@supabase/supabase-js": "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
